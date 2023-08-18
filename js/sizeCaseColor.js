@@ -30,3 +30,14 @@ document.getElementById('color-btn').addEventListener('change',function(e){
     let colorNow = e.target.value;
     targetArea.style.color = colorNow;
 })
+
+
+//Enter button enabled for text size
+let btn = document.getElementById('size-btn');
+document.addEventListener('keypress', function(e){
+    let keyCode = e.keyCode? e.keyCode: e.which;
+    if(keyCode === 13){
+        btn.click();
+    }
+   
+})
